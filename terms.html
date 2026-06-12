@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of Service for CarKeeper Android app.">
+  <title>CarKeeper Terms of Service</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1d2430;
+      --muted: #5b6472;
+      --line: #d8dee9;
+      --accent: #176b87;
+      --accent-soft: #e6f3f6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11151b;
+        --surface: #181e26;
+        --text: #eef3f8;
+        --muted: #b3bfcc;
+        --line: #303846;
+        --accent: #7dccdf;
+        --accent-soft: #17313a;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: clamp(24px, 5vw, 56px);
+      box-shadow: 0 20px 60px rgba(20, 30, 45, 0.08);
+    }
+
+    h1, h2 {
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 26px;
+      border-top: 1px solid var(--line);
+      padding-top: 28px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 18px 22px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      margin: 24px 0 28px;
+      padding: 18px;
+      border-radius: 12px;
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 26px 0 0;
+    }
+
+    .language-switch a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+      background: var(--surface);
+    }
+
+    .divider {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 3px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article>
+    <h1>Условия использования CarKeeper</h1>
+    <p class="muted">CarKeeper, Android package: <strong>com.ven1aone.carkeeper</strong></p>
+
+    <div class="meta">
+      <p><strong>Дата вступления в силу:</strong> 12 июня 2026 г.</p>
+      <p><strong>Разработчик:</strong> Veniamin Mylnikov</p>
+      <p><strong>Контакт:</strong> <a href="mailto:ven.mylnikov@gmail.com">ven.mylnikov@gmail.com</a></p>
+    </div>
+
+    <p>
+      Эти условия описывают правила использования Android-приложения CarKeeper. Используя приложение, вы соглашаетесь
+      с этими условиями. Если вы не согласны с ними, не используйте приложение.
+    </p>
+
+    <div class="language-switch" aria-label="Language links">
+      <a href="#english">English version</a>
+      <a href="index.html">Политика конфиденциальности / Privacy Policy</a>
+    </div>
+
+    <h2>Назначение приложения</h2>
+    <p>
+      CarKeeper помогает вести личный автомобильный журнал: автомобили, пробег, заправки, обслуживание, ремонты, расходы,
+      доходы, заметки, фотографии, напоминания, статистика, экспорт и резервные копии.
+    </p>
+    <p>
+      Приложение является информационным инструментом. Оно не заменяет профессиональную диагностику, техническое обслуживание,
+      юридическую консультацию, бухгалтерский учет или оценку состояния автомобиля специалистом.
+    </p>
+
+    <h2>Ваши данные</h2>
+    <ul>
+      <li>Вы отвечаете за точность данных, которые вводите в приложение.</li>
+      <li>Основные данные хранятся локально на вашем устройстве.</li>
+      <li>Если вы включаете Google Sync, резервная копия создается в вашем Google Drive.</li>
+      <li>Вы сами отвечаете за сохранность экспортированных ZIP, CSV, PDF и других файлов после их создания или отправки.</li>
+    </ul>
+
+    <h2>Google Drive backup</h2>
+    <p>
+      Синхронизация с Google Drive является необязательной. Для нее приложение запрашивает ограниченный доступ
+      <code>https://www.googleapis.com/auth/drive.file</code>, чтобы создавать и обновлять файлы резервной копии CarKeeper
+      в вашем Google Drive.
+    </p>
+    <p>
+      Не редактируйте вручную таблицы и файлы резервной копии CarKeeper в Google Drive, если вы хотите сохранить корректную
+      работу восстановления и синхронизации.
+    </p>
+
+    <h2>Экспорт, отчеты и передача данных</h2>
+    <p>
+      CarKeeper может создавать ZIP, CSV и PDF-файлы по вашему запросу. Такие файлы могут содержать персональные данные,
+      фотографии, расходы и сведения об автомобиле. Перед отправкой файла другим людям проверьте его содержимое.
+    </p>
+    <p>
+      PDF-отчеты и статистика основаны на данных, которые вы внесли в приложение. Разработчик не гарантирует, что отчет
+      подтверждает техническое состояние автомобиля или юридическую достоверность истории владения.
+    </p>
+
+    <h2>Разрешенное использование</h2>
+    <p>Вы соглашаетесь не использовать приложение для:</p>
+    <ul>
+      <li>нарушения закона или прав других лиц;</li>
+      <li>загрузки или распространения вредоносных, незаконных или чужих материалов;</li>
+      <li>попыток нарушить работу приложения, Google Drive, Google Sheets или других сервисов;</li>
+      <li>представления экспортированных отчетов как независимой экспертизы или официального документа, если это не соответствует действительности.</li>
+    </ul>
+
+    <h2>Доступность и изменения</h2>
+    <p>
+      Приложение предоставляется "как есть". Некоторые функции могут зависеть от Android, Google Play services, Google Drive,
+      Google Sheets, подключения к интернету и настроек вашего аккаунта. Функции приложения могут изменяться, добавляться или
+      удаляться в обновлениях.
+    </p>
+
+    <h2>Ограничение ответственности</h2>
+    <p>
+      В пределах, разрешенных законом, разработчик не несет ответственности за косвенные убытки, потерю данных, ошибки ввода,
+      неверные решения на основе записей в приложении, проблемы сторонних сервисов или последствия передачи экспортированных
+      файлов другим людям.
+    </p>
+
+    <h2>Конфиденциальность</h2>
+    <p>
+      Обработка данных описана в <a href="index.html">Политике конфиденциальности CarKeeper</a>. Она является частью этих условий.
+    </p>
+
+    <h2>Изменения условий</h2>
+    <p>
+      Эти условия могут обновляться при изменении приложения или требований платформ. Новая версия будет опубликована на этой
+      странице с обновленной датой вступления в силу.
+    </p>
+
+    <section id="english" class="divider" lang="en">
+      <h1>CarKeeper Terms of Service</h1>
+      <p class="muted">CarKeeper, Android package: <strong>com.ven1aone.carkeeper</strong></p>
+
+      <div class="meta">
+        <p><strong>Effective date:</strong> June 12, 2026</p>
+        <p><strong>Developer:</strong> Veniamin Mylnikov</p>
+        <p><strong>Contact:</strong> <a href="mailto:ven.mylnikov@gmail.com">ven.mylnikov@gmail.com</a></p>
+      </div>
+
+      <p>
+        These Terms describe the rules for using the CarKeeper Android app. By using the app, you agree to these Terms.
+        If you do not agree, please do not use the app.
+      </p>
+
+      <h2>Purpose of the app</h2>
+      <p>
+        CarKeeper helps users keep a personal vehicle journal: vehicles, odometer readings, fuel, maintenance, repairs,
+        expenses, income, notes, photos, reminders, statistics, exports, and backups.
+      </p>
+      <p>
+        The app is an informational tool. It does not replace professional vehicle inspection, maintenance, legal advice,
+        accounting, or an expert assessment of a vehicle's condition.
+      </p>
+
+      <h2>Your data</h2>
+      <ul>
+        <li>You are responsible for the accuracy of the data you enter into the app.</li>
+        <li>Core data is stored locally on your device.</li>
+        <li>If you enable Google Sync, a backup is created in your Google Drive.</li>
+        <li>You are responsible for exported ZIP, CSV, PDF, and other files after they are created or shared.</li>
+      </ul>
+
+      <h2>Google Drive backup</h2>
+      <p>
+        Google Drive sync is optional. The app requests the limited scope
+        <code>https://www.googleapis.com/auth/drive.file</code> to create and update CarKeeper backup files in your Google Drive.
+      </p>
+      <p>
+        Do not manually edit CarKeeper backup spreadsheets or files in Google Drive if you want backup restore and sync to remain reliable.
+      </p>
+
+      <h2>Exports, reports, and sharing</h2>
+      <p>
+        CarKeeper may create ZIP, CSV, and PDF files at your request. These files may contain personal data, photos, expenses,
+        and vehicle information. Review file contents before sharing them with other people.
+      </p>
+      <p>
+        PDF reports and statistics are based on the data you entered into the app. The developer does not guarantee that a report
+        proves a vehicle's technical condition or the legal accuracy of ownership history.
+      </p>
+
+      <h2>Acceptable use</h2>
+      <p>You agree not to use the app to:</p>
+      <ul>
+        <li>violate the law or the rights of others;</li>
+        <li>upload or distribute harmful, illegal, or unauthorized materials;</li>
+        <li>attempt to disrupt the app, Google Drive, Google Sheets, or other services;</li>
+        <li>present exported reports as independent inspections or official documents when that is not accurate.</li>
+      </ul>
+
+      <h2>Availability and changes</h2>
+      <p>
+        The app is provided "as is". Some features may depend on Android, Google Play services, Google Drive, Google Sheets,
+        internet access, and your account settings. App features may change, be added, or be removed in updates.
+      </p>
+
+      <h2>Limitation of liability</h2>
+      <p>
+        To the extent permitted by law, the developer is not responsible for indirect losses, data loss, input mistakes,
+        decisions made based on app records, third-party service issues, or consequences of sharing exported files with others.
+      </p>
+
+      <h2>Privacy</h2>
+      <p>
+        Data handling is described in the <a href="index.html">CarKeeper Privacy Policy</a>. The Privacy Policy is part of these Terms.
+      </p>
+
+      <h2>Changes to these Terms</h2>
+      <p>
+        These Terms may be updated when app features or platform requirements change. The updated version will be published on
+        this page with a new effective date.
+      </p>
+    </section>
+  </article>
+</main>
+</body>
+</html>
